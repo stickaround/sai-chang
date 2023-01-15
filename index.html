@@ -282,7 +282,7 @@
                   ></span>
                 </h2>
                 <p class="text-5">
-                  I'm a professional software engineer with 6+ years of hands-on experience.
+                  I'm a professional software engineer with <span id="experience_year1"></span>+ years of hands-on experience.
                   I have great passion in web & web3 development
                   I always stand on best practices and principles of software engineering, providing
                   high-quality solutions and follow the latest trends and
@@ -1556,6 +1556,7 @@
     <script>
       function load() {
         var years = new Date().getFullYear() - 2015;
+        document.getElementById("experience_year1").innerHTML = years;
         document.getElementById("experience_year").innerHTML = years;
       }
     </script>
